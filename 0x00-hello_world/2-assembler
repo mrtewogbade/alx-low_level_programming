@@ -1,7 +1,2 @@
 #!/bin/bash
-
-CFILE="main.c"
-OUTPUT_FILE="${CFILE%.c}.s"
-
-# Generate assembly code from C file
 gcc -S -masm=intel "$CFILE" -o "$OUTPUT_FILE"
